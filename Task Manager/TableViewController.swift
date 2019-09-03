@@ -30,8 +30,8 @@ class TableViewController: UITableViewController {
         }
         
         let alertAction2 = UIAlertAction.init(title: "Create", style: .default) { (alert) in
-            if let newTask = alertController.textFields![0].text{
-                if newTask != ""{
+            if let newTask = alertController.textFields![0].text {
+                if newTask != "" {
                     addTask(nameItem: newTask)
                     self.tableView.reloadData()
                 }
